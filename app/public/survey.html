@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./assets/images/ffFavicon.png">
+    <title>friend finder | survey</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/8a9d30ef23.js"></script>
+
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/home">friend finder</a>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/survey">survey</a>
+                </li>
+
+        </div>
+    </nav>
+    <!-- Main jumbotron -->
+    <div class="jumbotron">
+        <div class="banner container">
+            <h1 class="display-3">survey</h1>
+            <p>scale yourself on these ten statements and we'll find a match for you!</p>
+        </div>
+    </div>
+    <img class="img-bg" src="./assets/images/personhead2.jpg">
+    <div class="container">
+    
+        <div class="row">
+            <h4>please submit your name, and the link for a picture of yourself.</h4>
+            <form class="survey-form">
+                <div class="form-group row form-name">
+                    <label for="name-input" class="col-2 col-form-label">name</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" placeholder="your name" id="name-input" required>
+                    </div>
+                </div>
+                <div class="form-group row form-url">
+                    <label for="link-input" class="col-2 col-form-label">link</label>
+                    <div class="col-10">
+                        <input class="form-control" type="url" placeholder="https://example.com/yourimage.jpg" id="link-input" required>
+                    </div>
+                </div>
+                <h4>select from the dropdown box on a scale of 1-5</h4>
+                <h5>where 1 is least like yourself, and 5 is most</h5>
+                <div class="form-group questions">
+                    <p>i get angry easily.</p>
+                    <select id="question-1" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i am filled with doubts about things.</p>
+                    <select id="question-2" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i feel others' emotions.</p>
+                    <select id="question-3" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i respect authority.</p>
+                    <select id="question-4" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i carry out my plans.</p>
+                    <select id="question-5" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i like order.</p>
+                    <select id="question-6" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i make friends easily.</p>
+                    <select id="question-7" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i take charge.</p>
+                    <select id="question-8" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i am quick to understand things.</p>
+                    <select id="question-9" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions">
+                    <p>i enjoy the beauty of nature.</p>
+                    <select id="question-10" class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <button id="submit-btn" type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="match-modal">submit &raquo;</button>
+            </form>
+        </div>
+        <br>
+        <hr>
+        <br>
+  
+    <div class="modal fade" tabindex="-1" role="dialog" id="matchModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">you have matched with:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="friend-match"></h5>
+                    <img id="image-match" class="materialboxed" height="350" src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+
+        $('#submit-btn').on('click', function(event) {
+            event.preventDefault();
+
+            // information collected from survey
+            var surveyInput = {
+                name: $("#name-input").val().trim(),
+                photoLink: $("#link-input").val().trim(),
+                answers: [
+                    $("#question-1").val(), // parseInt?
+                    $("#question-2").val(),
+                    $("#question-3").val(),
+                    $("#question-4").val(),
+                    $("#question-5").val(),
+                    $("#question-6").val(),
+                    $("#question-7").val(),
+                    $("#question-8").val(),
+                    $("#question-9").val(),
+                    $("#question-10").val()
+                ]
+
+            };
+
+            console.log("friend = " + JSON.stringify(surveyInput));
+
+   
+
+            var url = window.location.origin;
+          
+            $.post(url + "/api/friends", surveyInput, function(data) {
+                console.log(data, surveyInput);
+
+                console.log("friend match: " + data.name);
+
+                $("#friend-match").text(data.name);
+                $("#image-match").attr("src", data.photoLink);
+
+                $("#matchModal").modal("toggle");
+                alert("you did it "+data.name+" | "+data.photoLink);
+            });
+
+        });
+        //return false;
+
+    });
+    </script>
+</body>
+
+</html>

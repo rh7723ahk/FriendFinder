@@ -1,0 +1,42 @@
+.banner {
+	padding: 50px;
+}
+
+.img-bg {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;  
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+}
+
+.container {
+	padding: 50px;
+}
+
+.questions, .form-url, .form-name {
+	padding: 20px;
+	width: 100%;
+}
+
+#submit-btn {
+	margin: 50px;
+}
+
+h4, h5 {
+	width: 100%;
+}
+
+.modal-body {
+	padding: 50px;
+}
+
+.modal-title {
+	padding-left: 20px;
+}
+
+#image-match {
+	padding: 10px;
+}
